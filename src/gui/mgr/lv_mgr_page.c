@@ -36,8 +36,8 @@ typedef struct lv_mgr_page {
 extern lv_mgr_page_cfg_t __lv_mgr_page_cfg_start__;
 extern lv_mgr_page_cfg_t __lv_mgr_page_cfg_end__;
 static lv_mgr_page_array_t *mgr;
-
 static lv_mgr_page_stack_t stack = { 0 };
+static bool page_anim = false;
 /* Private functions -----------------------------------------------------------------------------*/
 static void lv_mgr_page_active(lv_mgr_page_t *page)
 {
@@ -63,7 +63,7 @@ static void lv_mgr_page_inactive(lv_mgr_page_t *page)
 
 static void lv_mgr_page_delay_destroy(lv_mgr_page_t *page)
 {
-	page->state = LV_PAGE_STATE_DESTROYED;
+	page->state = LV_PAGE_STATE_ACTIVE_BG;
 }
 
 static void lv_mgr_page_remove(lv_mgr_page_t *page)
@@ -74,7 +74,7 @@ static void lv_mgr_page_remove(lv_mgr_page_t *page)
 		interface->exit();
 		interface->destroy();
 		page->state = LV_PAGE_STATE_IDLE;
-	} else if (page->state >= LV_PAGE_STATE_DESTROYED) {
+	} else if (page->state > LV_PAGE_STATE_DESTROYED) {
 		interface->destroy();
 		page->state = LV_PAGE_STATE_IDLE;
 	}
@@ -82,6 +82,7 @@ static void lv_mgr_page_remove(lv_mgr_page_t *page)
 
 void lv_mgr_page_enter_anim_ready(lv_timer_t *timer)
 {
+	page_anim = false;
 }
 
 void lv_mgr_page_exit_anim_ready(lv_timer_t *timer)
@@ -91,6 +92,7 @@ void lv_mgr_page_exit_anim_ready(lv_timer_t *timer)
 	if (handle->obj != NULL) {
 		lv_obj_del(handle->obj);
 	}
+	page_anim = false;
 }
 
 lv_mgr_status lv_mgr_page_init(void)
@@ -151,7 +153,7 @@ lv_mgr_status lv_mgr_page_push(int32_t page_id, bool anim)
 		return LV_MGR_OK;
 	}
 
-	if(target->state == LV_PAGE_STATE_DESTROYED) {
+	if (target->state == LV_PAGE_STATE_DESTROYED) {
 		LV_LOG_WARN("if not free page");
 		return LV_MGR_ERROR;
 	}
@@ -188,6 +190,7 @@ lv_mgr_status lv_mgr_page_push(int32_t page_id, bool anim)
 	if (interface->enter_anim && anim) {
 		uint32_t time = 0;
 		lv_timer_t *timer;
+		page_anim = true;
 		interface->enter_anim(target->obj, &time);
 		timer = lv_timer_create(lv_mgr_page_enter_anim_ready, time + 40, STACK_TOP->page);
 		lv_timer_set_repeat_count(timer, 1);
@@ -207,6 +210,7 @@ lv_mgr_status lv_mgr_page_pop(bool anim)
 	lv_mgr_page_interface_t *top_page_interface = top_page->interface;
 	if (top_page_interface->exit_anim && anim) {
 		uint32_t time = 0;
+		page_anim = true;
 		top_page_interface->exit_anim(STACK_SEC->page->obj, &time);
 		if (time != 0) {
 			lv_timer_t *timer;
@@ -233,10 +237,31 @@ lv_mgr_status lv_mgr_page_pop(bool anim)
 	return LV_MGR_OK;
 }
 
+lv_mgr_status lv_mgr_page_pop_n(uint32_t n, bool anim)
+{
+	return LV_MGR_OK;
+}
+
+lv_mgr_status lv_mgr_page_pop_to_root(bool anim)
+{
+	return LV_MGR_OK;
+}
+
 int32_t lv_mgr_page_get_id(void)
 {
 	if (STACK_TOP == NULL) {
 		return -1;
 	}
 	return PAGE_INTERFACE(STACK_TOP->page)->id;
+}
+
+bool lv_mgr_page_is_root(void)
+{
+	LV_ASSERT(NULL == STACK_ROOT || NULL == STACK_TOP);
+	return STACK_TOP == STACK_ROOT;
+}
+
+bool lv_mgr_page_is_anim(void)
+{
+	return page_anim;
 }
