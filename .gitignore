@@ -1,0 +1,8 @@
+## Commonly used CMake directories
+build*/
+bin*/
+!libjson-c.dll
+!SDL2.dll
+## JetBrains IDE artifacts
+.idea
+cmake-build-*
