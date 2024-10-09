@@ -21,11 +21,13 @@ add_executable(${PROJECT_NAME})
 
 add_subdirectory(lib)
 add_subdirectory(src)
+add_subdirectory(tests)
 
 target_link_libraries(
         ${PROJECT_NAME}
         Proj_Src
         Proj_Lib
+        Proj_Test
         ${CMAKE_SOURCE_DIR}/bin/SDL2.dll
         ${CMAKE_SOURCE_DIR}/bin/libjson-c.dll
 )

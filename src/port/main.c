@@ -10,8 +10,9 @@
 #include "lv_drivers/sdl/sdl.h"
 #include "lvgl/lvgl.h"
 #include "lvgl/examples/lv_examples.h"
+#include "lv_port_fs.h"
+#include "tests.h"
 #include "gui.h"
-
 
 static void hal_init(void);
 
@@ -21,18 +22,20 @@ int main(int argc, char **argv)
 	(void)argv; /*Unused*/
 
 	/*Initialize LVGL*/
+	// lv_port_fs_init();
 	lv_init();
 
 	/*Initialize the HAL (display, input devices, tick) for LVGL*/
 	hal_init();
 	// ui_test_init();
-//	gui_init();
+	// gui_init();
 	// ui_test_init();
 	// lv_demo_music();
 	// lv_demo_keypad_encoder();
 	// lv_demo_stress();
 	// lv_demo_widgets();
-	lv_example_freetype_1();
+	lv_test_freetype();
+	// lv_test_png();
 	while (1) {
 		/* Periodically call the lv_task handler.
 		 * It could be done in a timer interrupt or an OS task too.*/
