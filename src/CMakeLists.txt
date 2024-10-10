@@ -2,7 +2,7 @@ project(Proj_Src)
 
 add_library(${PROJECT_NAME} INTERFACE)
 
-file(GLOB_RECURSE PORJ_SRC_FILE "gui/*.c" "platform/windows")
+file(GLOB_RECURSE PORJ_SRC_FILE "gui/*.c" "platform/windows/*.c")
 
 target_sources(${PROJECT_NAME} INTERFACE ${PORJ_SRC_FILE})
 

@@ -10,7 +10,6 @@
 #include "lv_drivers/sdl/sdl.h"
 #include "lvgl/lvgl.h"
 #include "lvgl/examples/lv_examples.h"
-#include "lv_port_fs.h"
 #include "tests.h"
 #include "gui.h"
 
