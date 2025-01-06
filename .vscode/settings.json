@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "sdl.h": "c",
+        "lv_mgr_page.h": "c",
+        "gui_pages.h": "c",
+        "gui_master.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

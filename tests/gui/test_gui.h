@@ -1,27 +1,33 @@
-#ifndef LV_MGR_DEFS_H
-#define LV_MGR_DEFS_H
+#ifndef TEST_GUI_H
+#define TEST_GUI_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* Includes --------------------------------------------------------------------------------------*/
-#include <stdint.h>
+#include "gui/mgr/lv_mgr_page.h"
 /* Define ----------------------------------------------------------------------------------------*/
-#define LV_MGR_PAGE_REG_USE_SECTION 0
 /* Exported macro --------------------------------------------------------------------------------*/
 /* Exported typedef ------------------------------------------------------------------------------*/
-typedef enum {
-	LV_MGR_OK,
-	LV_MGR_ERROR,
-	LV_MGR_ALLOC_ERROR,
-	LV_MGR_NOT_FOUND_PAGE,
-	LV_MGR_NOT_INIT,
-} lv_mgr_status;
-
-typedef enum {
-	LV_PAGE_STATE_IDLE = 0, /* Not in use */
-	LV_PAGE_STATE_DESTROYED, /* Not active and having been destroyed */
-	LV_PAGE_STATE_CREATED, /* Created */
-	LV_PAGE_STATE_INACTIVE, /* Not active */
-	LV_PAGE_STATE_ACTIVE_BG, /* Active but at the background */
-	LV_PAGE_STATE_ACTIVE, /* Active and at the foreground */
-} lv_page_status;
+typedef enum test_gui_page_id {
+	TEST_GUI_PAGE_1 = 0x100,
+	TEST_GUI_PAGE_2,
+	TEST_GUI_PAGE_3,
+	TEST_GUI_PAGE_4,
+	TEST_GUI_PAGE_5,
+	TEST_GUI_PAGE_6,
+	TEST_GUI_PAGE_7,
+	TEST_GUI_PAGE_8,
+	TEST_GUI_PAGE_9,
+} test_gui_page_id;
 /* Exported constants ----------------------------------------------------------------------------*/
 /* Exported functions ----------------------------------------------------------------------------*/
-#endif // LV_MGR_DEFS_H
+
+void test_gui_init(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* TEST_GUI_H */

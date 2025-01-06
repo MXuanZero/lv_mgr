@@ -1,6 +1,6 @@
 /* Includes ------------------------------------------------------------------*/
-#include "gui_pages.h"
-#include "lv_mgr_page.h"
+#include "page/gui_pages.h"
+#include "mgr/lv_mgr_page.h"
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
 /* Private typedef -----------------------------------------------------------*/
@@ -11,5 +11,5 @@ void gui_init(void)
 {
 	lv_mgr_page_init();
 	lv_mgr_page_push(LV_PAGE_MASTER, false);
-	// lv_mgr_page_push(LV_PAGE_START_UP, false);
+	lv_mgr_page_push(LV_PAGE_START_UP, false);
 }

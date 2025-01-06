@@ -1,6 +1,5 @@
 
 #include <windows.h>
-#include "lv_drivers/win32drv/win32drv.h"
 //#include "resource.h"
 #define _DEFAULT_SOURCE /* needed for usleep() */
 #include <stdio.h>
@@ -10,8 +9,8 @@
 #include "lv_drivers/sdl/sdl.h"
 #include "lvgl/lvgl.h"
 #include "lvgl/examples/lv_examples.h"
-#include "tests.h"
-#include "gui.h"
+// #include "gui/gui.h"
+#include "tests/tests.h"
 
 static void hal_init(void);
 
@@ -26,14 +25,11 @@ int main(int argc, char **argv)
 
 	/*Initialize the HAL (display, input devices, tick) for LVGL*/
 	hal_init();
+
+	test_gui_init();
 	// ui_test_init();
 	// gui_init();
-	// ui_test_init();
-	// lv_demo_music();
-	// lv_demo_keypad_encoder();
-	// lv_demo_stress();
-	// lv_demo_widgets();
-	lv_test_freetype();
+	// lv_test_freetype();
 	// lv_test_png();
 	while (1) {
 		/* Periodically call the lv_task handler.
@@ -69,10 +65,10 @@ static void hal_init(void)
 
 	lv_disp_t *disp = lv_disp_drv_register(&disp_drv);
 
-	lv_theme_t *th = lv_theme_default_init(disp, lv_palette_main(LV_PALETTE_BLUE),
-					       lv_palette_main(LV_PALETTE_RED),
-					       LV_THEME_DEFAULT_DARK, LV_FONT_DEFAULT);
-	lv_disp_set_theme(disp, th);
+	// lv_theme_t *th = lv_theme_default_init(disp, lv_palette_main(LV_PALETTE_BLUE),
+	// 				       lv_palette_main(LV_PALETTE_RED),
+	// 				       LV_THEME_DEFAULT_DARK, LV_FONT_DEFAULT);
+	// lv_disp_set_theme(disp, th);
 
 	lv_group_t *g = lv_group_create();
 	lv_group_set_default(g);

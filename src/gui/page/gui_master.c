@@ -1,5 +1,5 @@
 /* Includes ------------------------------------------------------------------*/
-#include "lv_mgr_page.h"
+#include "mgr/lv_mgr_page.h"
 #include "gui_master.h"
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
@@ -81,11 +81,11 @@ static void gui_master_destroy(void)
 {
 }
 
-lv_mgr_page_interface_t app_master = {
+lv_mgr_page_interface_t app_master_handle = {
 	.id = LV_PAGE_MASTER,
 	.create = gui_master_create,
 	.enter = gui_master_enter,
 	.exit = gui_master_exit,
 	.destroy = gui_master_destroy,
 };
-LV_MGR_PAGE_REG(app_master);
+LV_MGR_PAGE_REG(app_master_handle);

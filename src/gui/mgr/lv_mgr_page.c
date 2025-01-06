@@ -1,5 +1,6 @@
 /* Includes --------------------------------------------------------------------------------------*/
 #include "lv_mgr_page.h"
+#include <stdio.h>
 /* Private define --------------------------------------------------------------------------------*/
 /* Private macro ---------------------------------------------------------------------------------*/
 #define STACK_TOP (stack.head)
@@ -33,8 +34,30 @@ typedef struct lv_mgr_page {
 } lv_mgr_page_array_t;
 /* Private function prototypes -------------------------------------------------------------------*/
 /* Private variables -----------------------------------------------------------------------------*/
+#if 0
 extern lv_mgr_page_cfg_t __lv_mgr_page_cfg_start__;
 extern lv_mgr_page_cfg_t __lv_mgr_page_cfg_end__;
+#else
+
+#define LV_MGR_PAGE_CFG_LIST_SIZE (sizeof(lv_mgr_page_cfg_list) / sizeof(lv_mgr_page_cfg_list[0]))
+#define __lv_mgr_page_cfg_start__ lv_mgr_page_cfg_list[0]
+#define __lv_mgr_page_cfg_end__ lv_mgr_page_cfg_list[LV_MGR_PAGE_CFG_LIST_SIZE - 1]
+
+#if 0
+extern lv_mgr_page_interface_t app_master_handle;
+extern lv_mgr_page_interface_t gui_start_up_handle;
+
+lv_mgr_page_cfg_t lv_mgr_page_cfg_list[] = {
+	{ .inf = &app_master_handle },
+	{ .inf = &gui_start_up_handle },
+	{ .inf = NULL }, // END
+};
+
+#else
+#include "tests/gui/test_gui_page_cfg.h"
+#endif
+#endif
+
 static lv_mgr_page_array_t *mgr;
 static lv_mgr_page_stack_t stack = { 0 };
 static bool page_anim = false;
@@ -109,8 +132,9 @@ lv_mgr_status lv_mgr_page_init(void)
 		return LV_MGR_ERROR;
 	}
 	memset(mgr, 0, page_sum * sizeof(lv_mgr_page_t) + sizeof(lv_mgr_page_array_t));
-	for (cfg_arr = &__lv_mgr_page_cfg_start__; cfg_arr != &__lv_mgr_page_cfg_end__; cfg_arr++) {
-		mgr->handles[cnt++].interface = cfg_arr->interfce;
+	for (cfg_arr = &__lv_mgr_page_cfg_start__; cfg_arr != &__lv_mgr_page_cfg_end__;
+	     cfg_arr++, cnt++) {
+		mgr->handles[cnt].interface = cfg_arr->inf;
 		LV_LOG_INFO("page[%d] name: %s", cnt, cfg_arr->page->name);
 	}
 

@@ -4,7 +4,8 @@
 void lv_example_obj_1(void)
 {
     lv_obj_t * obj1;
-    obj1 = lv_obj_create(lv_scr_act());
+    lv_obj_t *obj = lv_scr_act();
+    obj1 = lv_obj_create(obj);
     lv_obj_set_size(obj1, 100, 50);
     lv_obj_align(obj1, LV_ALIGN_CENTER, -60, -30);
 

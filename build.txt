@@ -1,0 +1,375 @@
+In archive .\bin\libProjSrc.a:
+
+gui.c.obj:     file format pe-x86-64
+
+SYMBOL TABLE:
+[  0](sec -2)(fl 0x00)(ty    0)(scl 103) (nx 1) 0x0000000000000000 gui.c
+File 
+[  2](sec  1)(fl 0x00)(ty   20)(scl   2) (nx 1) 0x0000000000000000 gui_init
+AUX tagndx 0 ttlsiz 0x0 lnnos 0 next 0
+[  4](sec  1)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .text
+AUX scnlen 0x25 nreloc 2 nlnno 0
+[  6](sec  2)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .data
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[  8](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .bss
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[ 10](sec  4)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .xdata
+AUX scnlen 0xc nreloc 0 nlnno 0
+[ 12](sec  5)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .pdata
+AUX scnlen 0xc nreloc 3 nlnno 0
+[ 14](sec  6)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_info
+AUX scnlen 0x253 nreloc 6 nlnno 0
+[ 16](sec  7)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_abbrev
+AUX scnlen 0x99 nreloc 0 nlnno 0
+[ 18](sec  8)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_aranges
+AUX scnlen 0x30 nreloc 2 nlnno 0
+[ 20](sec  9)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_line
+AUX scnlen 0x76 nreloc 12 nlnno 0
+[ 22](sec 11)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_line_str
+AUX scnlen 0x13c nreloc 0 nlnno 0
+[ 24](sec 12)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .rdata$zzz
+AUX scnlen 0x12 nreloc 0 nlnno 0
+[ 26](sec 13)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_frame
+AUX scnlen 0x40 nreloc 2 nlnno 0
+[ 28](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_mgr_page_init
+[ 29](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_mgr_page_push
+
+
+
+gui_param.c.obj:     file format pe-x86-64
+
+SYMBOL TABLE:
+[  0](sec -2)(fl 0x00)(ty    0)(scl 103) (nx 1) 0x0000000000000000 gui_param.c
+File 
+[  2](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 0) 0x0000000000000000 json_obj
+[  3](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 0) 0x0000000000000008 json_win_pos
+[  4](sec  1)(fl 0x00)(ty   20)(scl   2) (nx 1) 0x0000000000000000 win_param_init
+AUX tagndx 0 ttlsiz 0x0 lnnos 0 next 0
+[  6](sec  1)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x000000000000018e win_param_pos_set
+[  7](sec  1)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000221 win_param_pos_get
+[  8](sec  1)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000299 win_pos_param_exit
+[  9](sec  1)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .text
+AUX scnlen 0x2b9 nreloc 49 nlnno 0
+[ 11](sec  2)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .data
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[ 13](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .bss
+AUX scnlen 0x10 nreloc 0 nlnno 0
+[ 15](sec  4)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .rdata
+AUX scnlen 0x16 nreloc 0 nlnno 0
+[ 17](sec  5)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .xdata
+AUX scnlen 0x30 nreloc 0 nlnno 0
+[ 19](sec  6)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .pdata
+AUX scnlen 0x30 nreloc 12 nlnno 0
+[ 21](sec  7)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_info
+AUX scnlen 0x4c5 nreloc 17 nlnno 0
+[ 23](sec  8)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_abbrev
+AUX scnlen 0x146 nreloc 0 nlnno 0
+[ 25](sec  9)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_aranges
+AUX scnlen 0x30 nreloc 2 nlnno 0
+[ 27](sec 10)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_line
+AUX scnlen 0x149 nreloc 12 nlnno 0
+[ 29](sec 11)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_str
+AUX scnlen 0xc nreloc 0 nlnno 0
+[ 31](sec 12)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_line_str
+AUX scnlen 0x139 nreloc 0 nlnno 0
+[ 33](sec 13)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .rdata$zzz
+AUX scnlen 0x12 nreloc 0 nlnno 0
+[ 35](sec 14)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_frame
+AUX scnlen 0xb8 nreloc 8 nlnno 0
+[ 37](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 json_object_from_file
+[ 38](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 json_object_new_object
+[ 39](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 json_object_object_get
+[ 40](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 json_object_object_add
+[ 41](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 json_object_new_int
+[ 42](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 json_object_to_file_ext
+[ 43](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 json_object_put
+[ 44](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 json_object_set_int
+[ 45](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 json_object_get_int
+
+
+
+lv_mgr_page.c.obj:     file format pe-x86-64
+
+SYMBOL TABLE:
+[  0](sec -2)(fl 0x00)(ty    0)(scl 103) (nx 1) 0x0000000000000000 lv_mgr_page.c
+File 
+[  2](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 1) 0x0000000000000000 printf
+AUX tagndx 0 ttlsiz 0x0 lnnos 0 next 0
+[  4](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000056 lv_scr_load
+[  5](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 0) 0x0000000000000000 mgr
+[  6](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 0) 0x0000000000000020 stack
+[  7](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 0) 0x0000000000000040 page_anim
+[  8](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000077 lv_mgr_page_active
+[  9](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x00000000000000f2 lv_mgr_page_inactive
+[ 10](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000133 lv_mgr_page_delay_destroy
+[ 11](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000149 lv_mgr_page_remove
+[ 12](sec  1)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x00000000000001b7 lv_mgr_page_enter_anim_ready
+[ 13](sec  1)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x00000000000001c9 lv_mgr_page_exit_anim_ready
+[ 14](sec  1)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x000000000000021a lv_mgr_page_init
+[ 15](sec 15)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .rdata$.refptr.__lv_mgr_page_cfg_end__
+AUX scnlen 0x8 nreloc 1 nlnno 0 checksum 0x0 assoc 0 comdat 2
+[ 17](sec 14)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .rdata$.refptr.__lv_mgr_page_cfg_start__
+AUX scnlen 0x8 nreloc 1 nlnno 0 checksum 0x0 assoc 0 comdat 2
+[ 19](sec  6)(fl 0x00)(ty    0)(scl   3) (nx 0) 0x00000000000000c0 __func__.2
+[ 20](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x00000000000003d7 lv_mgr_page_find
+[ 21](sec  1)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x000000000000047a lv_mgr_page_push
+[ 22](sec  6)(fl 0x00)(ty    0)(scl   3) (nx 0) 0x00000000000000e0 __func__.1
+[ 23](sec  1)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x00000000000006c8 lv_mgr_page_pop
+[ 24](sec  1)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000863 lv_mgr_page_pop_n
+[ 25](sec  1)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000876 lv_mgr_page_pop_to_root
+[ 26](sec  1)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000886 lv_mgr_page_get_id
+[ 27](sec  1)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x00000000000008ae lv_mgr_page_is_root
+[ 28](sec  6)(fl 0x00)(ty    0)(scl   3) (nx 0) 0x0000000000000100 __func__.0
+[ 29](sec  1)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000925 lv_mgr_page_is_anim
+[ 30](sec  1)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .text
+AUX scnlen 0x932 nreloc 90 nlnno 0
+[ 32](sec  2)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .data
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[ 34](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .bss
+AUX scnlen 0x41 nreloc 0 nlnno 0
+[ 36](sec  4)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .xdata
+AUX scnlen 0xb4 nreloc 0 nlnno 0
+[ 38](sec  5)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .pdata
+AUX scnlen 0xcc nreloc 51 nlnno 0
+[ 40](sec  6)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .rdata
+AUX scnlen 0x114 nreloc 0 nlnno 0
+[ 42](sec  7)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_info
+AUX scnlen 0x279e nreloc 59 nlnno 0
+[ 44](sec  8)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_abbrev
+AUX scnlen 0x3ae nreloc 0 nlnno 0
+[ 46](sec  9)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_aranges
+AUX scnlen 0x30 nreloc 2 nlnno 0
+[ 48](sec 10)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_line
+AUX scnlen 0x415 nreloc 34 nlnno 0
+[ 50](sec 11)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_str
+AUX scnlen 0x31 nreloc 0 nlnno 0
+[ 52](sec 12)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_line_str
+AUX scnlen 0x2a1 nreloc 0 nlnno 0
+[ 54](sec 13)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .rdata$zzz
+AUX scnlen 0x12 nreloc 0 nlnno 0
+[ 56](sec 16)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_frame
+AUX scnlen 0x2d0 nreloc 34 nlnno 0
+[ 58](sec 15)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 .refptr.__lv_mgr_page_cfg_end__
+[ 59](sec 14)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 .refptr.__lv_mgr_page_cfg_start__
+[ 60](sec  0)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 __imp___acrt_iob_func
+[ 61](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 __mingw_vfprintf
+[ 62](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_disp_load_scr
+[ 63](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_del
+[ 64](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 _lv_log_add
+[ 65](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_mem_alloc
+[ 66](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 memset
+[ 67](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_mem_free
+[ 68](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_timer_create
+[ 69](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_timer_set_repeat_count
+[ 70](sec  0)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 __lv_mgr_page_cfg_start__
+[ 71](sec  0)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 __lv_mgr_page_cfg_end__
+
+
+
+mouse_cursor_icon.c.obj:     file format pe-x86-64
+
+SYMBOL TABLE:
+[  0](sec -2)(fl 0x00)(ty    0)(scl 103) (nx 1) 0x0000000000000000 mouse_cursor_icon.c
+File 
+[  2](sec  1)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .text
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[  4](sec  2)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .data
+AUX scnlen 0x10 nreloc 1 nlnno 0
+[  6](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .bss
+AUX scnlen 0x0 nreloc 0 nlnno 0
+[  8](sec  4)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .rdata
+AUX scnlen 0x460 nreloc 0 nlnno 0
+[ 10](sec  5)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_info
+AUX scnlen 0x7fd nreloc 6 nlnno 0
+[ 12](sec  6)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_abbrev
+AUX scnlen 0xbf nreloc 0 nlnno 0
+[ 14](sec  7)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_aranges
+AUX scnlen 0x20 nreloc 1 nlnno 0
+[ 16](sec  8)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_line
+AUX scnlen 0x67 nreloc 14 nlnno 0
+[ 18](sec 10)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_line_str
+AUX scnlen 0x1d7 nreloc 0 nlnno 0
+[ 20](sec 11)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .rdata$zzz
+AUX scnlen 0x12 nreloc 0 nlnno 0
+[ 22](sec  4)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 mouse_cursor_icon_map
+[ 23](sec  2)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 mouse_cursor_icon
+
+
+
+gui_master.c.obj:     file format pe-x86-64
+
+SYMBOL TABLE:
+[  0](sec -2)(fl 0x00)(ty    0)(scl 103) (nx 1) 0x0000000000000000 gui_master.c
+File 
+[  2](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 1) 0x0000000000000000 lv_color_hex
+AUX tagndx 0 ttlsiz 0x0 lnnos 0 next 0
+[  4](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 0) 0x0000000000000000 gui_master_obj
+[  5](sec  2)(fl 0x00)(ty    0)(scl   3) (nx 0) 0x0000000000000000 page_map
+[  6](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000021 btnm_event_handler
+[  7](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000075 gui_master_create
+[  8](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000312 gui_master_enter
+[  9](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000319 gui_master_exit
+[ 10](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000320 gui_master_destroy
+[ 11](sec  1)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .text
+AUX scnlen 0x327 nreloc 35 nlnno 0
+[ 13](sec  2)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .data
+AUX scnlen 0x60 nreloc 7 nlnno 0
+[ 15](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .bss
+AUX scnlen 0x8 nreloc 0 nlnno 0
+[ 17](sec  4)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .xdata
+AUX scnlen 0x3c nreloc 0 nlnno 0
+[ 19](sec  5)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .pdata
+AUX scnlen 0x48 nreloc 18 nlnno 0
+[ 21](sec  6)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .rdata
+AUX scnlen 0x11 nreloc 0 nlnno 0
+[ 23](sec  7)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .lv.mgr.page
+AUX scnlen 0x8 nreloc 1 nlnno 0
+[ 25](sec  8)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_info
+AUX scnlen 0x23d5 nreloc 20 nlnno 0
+[ 27](sec  9)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_abbrev
+AUX scnlen 0x2a3 nreloc 0 nlnno 0
+[ 29](sec 10)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_aranges
+AUX scnlen 0x30 nreloc 2 nlnno 0
+[ 31](sec 11)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_line
+AUX scnlen 0x15e nreloc 29 nlnno 0
+[ 33](sec 12)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_str
+AUX scnlen 0xa nreloc 0 nlnno 0
+[ 35](sec 13)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_line_str
+AUX scnlen 0x296 nreloc 0 nlnno 0
+[ 37](sec 14)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .rdata$zzz
+AUX scnlen 0x12 nreloc 0 nlnno 0
+[ 39](sec 15)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_frame
+AUX scnlen 0x108 nreloc 12 nlnno 0
+[ 41](sec  2)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000020 app_master
+[ 42](sec  7)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 page_app_master_cfg
+[ 43](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_event_get_code
+[ 44](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_event_get_target
+[ 45](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_btnmatrix_get_selected_btn
+[ 46](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_create
+[ 47](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_bg_color
+[ 48](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_btnmatrix_create
+[ 49](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_border_side
+[ 50](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_btnmatrix_set_map
+[ 51](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_btnmatrix_set_one_checked
+[ 52](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_size
+[ 53](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_border_width
+[ 54](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_pad_top
+[ 55](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_pad_bottom
+[ 56](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_pad_left
+[ 57](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_pad_right
+[ 58](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_pad_row
+[ 59](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_pad_column
+[ 60](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_radius
+[ 61](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_bg_opa
+[ 62](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_bg_grad_dir
+[ 63](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_text_color
+[ 64](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_text_opa
+[ 65](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_shadow_width
+[ 66](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_add_event_cb
+
+
+
+start_up.c.obj:     file format pe-x86-64
+
+SYMBOL TABLE:
+[  0](sec -2)(fl 0x00)(ty    0)(scl 103) (nx 1) 0x0000000000000000 start_up.c
+File 
+[  2](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 1) 0x0000000000000000 lv_anim_set_var
+AUX tagndx 0 ttlsiz 0x0 lnnos 0 next 0
+[  4](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x000000000000001a lv_anim_set_exec_cb
+[  5](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000035 lv_anim_set_time
+[  6](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x000000000000004d lv_anim_set_values
+[  7](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x000000000000007d lv_anim_set_path_cb
+[  8](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000098 lv_anim_set_ready_cb
+[  9](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x00000000000000b3 printf
+[ 10](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000109 lv_color_make
+[ 11](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000137 lv_color_hex
+[ 12](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000158 lv_color_black
+[ 13](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x000000000000017d lv_obj_center
+[ 14](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x00000000000001af lv_obj_remove_style_all
+[ 15](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x00000000000001db lv_obj_get_style_width
+[ 16](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x000000000000020e lv_obj_get_style_height
+[ 17](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 0) 0x0000000000000020 gui_start_up_cont_anim
+[ 18](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 0) 0x00000000000000a0 gui_start_up_logo_anim
+[ 19](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 0) 0x0000000000000120 gui_start_up_exit_anim
+[ 20](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 0) 0x0000000000000188 gui_start_up_anim
+[ 21](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000241 gui_start_up_cont_anim_cb
+[ 22](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x000000000000026e gui_start_up_logo_anim_cb
+[ 23](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000295 gui_start_up_exit_anim_cb
+[ 24](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x00000000000002c4 gui_start_up_ready_cb
+[ 25](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x00000000000002e3 gui_start_up_create
+[ 26](sec 16)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .rdata$.refptr.lv_font_montserrat_26
+AUX scnlen 0x8 nreloc 1 nlnno 0 checksum 0x0 assoc 0 comdat 2
+[ 28](sec 15)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .rdata$.refptr.lv_anim_path_ease_in_out
+AUX scnlen 0x8 nreloc 1 nlnno 0 checksum 0x0 assoc 0 comdat 2
+[ 30](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x0000000000000685 gui_start_up_enter
+[ 31](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x000000000000068c gui_start_up_exit
+[ 32](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x00000000000006ac gui_start_up_scr_exit_anim
+[ 33](sec  1)(fl 0x00)(ty   20)(scl   3) (nx 0) 0x00000000000006f7 gui_start_up_destroy
+[ 34](sec  1)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .text
+AUX scnlen 0x726 nreloc 74 nlnno 0
+[ 36](sec  2)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .data
+AUX scnlen 0x40 nreloc 5 nlnno 0
+[ 38](sec  3)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .bss
+AUX scnlen 0x190 nreloc 0 nlnno 0
+[ 40](sec  4)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .xdata
+AUX scnlen 0xf4 nreloc 0 nlnno 0
+[ 42](sec  5)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .pdata
+AUX scnlen 0x114 nreloc 69 nlnno 0
+[ 44](sec  6)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .rdata
+AUX scnlen 0x1a nreloc 0 nlnno 0
+[ 46](sec  7)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .lv.mgr.page
+AUX scnlen 0x8 nreloc 1 nlnno 0
+[ 48](sec  8)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_info
+AUX scnlen 0x34ca nreloc 44 nlnno 0
+[ 50](sec  9)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_abbrev
+AUX scnlen 0x373 nreloc 0 nlnno 0
+[ 52](sec 10)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_aranges
+AUX scnlen 0x30 nreloc 2 nlnno 0
+[ 54](sec 11)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_line
+AUX scnlen 0x27d nreloc 38 nlnno 0
+[ 56](sec 12)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_str
+AUX scnlen 0x13 nreloc 0 nlnno 0
+[ 58](sec 13)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_line_str
+AUX scnlen 0x312 nreloc 0 nlnno 0
+[ 60](sec 14)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .rdata$zzz
+AUX scnlen 0x12 nreloc 0 nlnno 0
+[ 62](sec 17)(fl 0x00)(ty    0)(scl   3) (nx 1) 0x0000000000000000 .debug_frame
+AUX scnlen 0x3d0 nreloc 46 nlnno 0
+[ 64](sec  3)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 label_logo
+[ 65](sec 16)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 .refptr.lv_font_montserrat_26
+[ 66](sec 15)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 .refptr.lv_anim_path_ease_in_out
+[ 67](sec  2)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 gui_start_up_handle
+[ 68](sec  7)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 page_gui_start_up_handle_cfg
+[ 69](sec  0)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 __imp___acrt_iob_func
+[ 70](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 __mingw_vfprintf
+[ 71](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_align
+[ 72](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_remove_style
+[ 73](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_get_style_prop
+[ 74](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_width
+[ 75](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_y
+[ 76](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_opa
+[ 77](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_mgr_page_pop
+[ 78](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_create
+[ 79](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_bg_color
+[ 80](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_size
+[ 81](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_border_color
+[ 82](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_border_side
+[ 83](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_border_width
+[ 84](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_border_post
+[ 85](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_label_create
+[ 86](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_text_font
+[ 87](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_set_style_text_color
+[ 88](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_label_set_text
+[ 89](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_anim_init
+[ 90](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_get_y
+[ 91](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_anim_timeline_create
+[ 92](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_anim_timeline_add
+[ 93](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_anim_timeline_start
+[ 94](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_scr_load_anim
+[ 95](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_anim_timeline_del
+[ 96](sec  0)(fl 0x00)(ty   20)(scl   2) (nx 0) 0x0000000000000000 lv_obj_del
+[ 97](sec  0)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 lv_anim_path_ease_in_out
+[ 98](sec  0)(fl 0x00)(ty    0)(scl   2) (nx 0) 0x0000000000000000 lv_font_montserrat_26
+
+

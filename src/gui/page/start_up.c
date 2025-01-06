@@ -1,5 +1,5 @@
 /* Includes ------------------------------------------------------------------*/
-#include "lv_mgr_page.h"
+#include "mgr/lv_mgr_page.h"
 #include "start_up.h"
 #include "gui_pages.h"
 /* Private define ------------------------------------------------------------*/

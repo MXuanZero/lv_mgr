@@ -1,6 +1,6 @@
 /* Includes --------------------------------------------------------------------------------------*/
 #include <stdio.h>
-#include "win_param.h"
+#include "gui_param.h"
 #include "json-c/json.h"
 /* Private define --------------------------------------------------------------------------------*/
 #define LVGL_JSON_FILE "lvgl_win.json"

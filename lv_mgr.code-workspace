@@ -4,7 +4,6 @@
 			"path": "."
 		}
 	],
-	"settings": {},
 
 	"launch": {
 		"version": "0.2.0",
@@ -58,5 +57,14 @@
 				"problemMatcher": [],
 			},
 		]
+	},
+	"settings": {
+		"files.associations": {
+			"tests.h": "c",
+			"lv_test_freetype.h": "c",
+			"lv_mgr_page.h": "c",
+			"lv_mgr_defs.h": "c",
+			"test_gui.h": "c"
+		}
 	}
 }

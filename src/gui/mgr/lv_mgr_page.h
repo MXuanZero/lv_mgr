@@ -6,10 +6,15 @@
 #include "lvgl/lvgl.h"
 /* Define ----------------------------------------------------------------------------------------*/
 /* Exported macro --------------------------------------------------------------------------------*/
-#define LV_MGR_PAGE_REG(_interfce)                                                         \
-	lv_mgr_page_cfg_t page##_interfce##_cfg __attribute__((__section__(".lv.mgr.page"))) = { \
-		.interfce = &_interfce,                                                        \
+#if LV_MGR_PAGE_REG_USE_SECTION == 1
+#define LV_MGR_PAGE_REG(_interface)                           \
+	__attribute__((__section__(".lv.mgr.page"), used))    \
+	const lv_mgr_page_cfg_t __page_##_interface##_cfg = { \
+		.interface = &_interface,                     \
 	}
+#else
+#define LV_MGR_PAGE_REG(_interface)
+#endif
 
 /* Exported typedef ------------------------------------------------------------------------------*/
 
@@ -26,7 +31,7 @@ typedef struct lv_mgr_page_interface {
 } lv_mgr_page_interface_t;
 
 typedef struct lv_mgr_page_cfg {
-	lv_mgr_page_interface_t *interfce;
+	lv_mgr_page_interface_t *inf;
 } lv_mgr_page_cfg_t;
 
 /* Exported constants ----------------------------------------------------------------------------*/

@@ -114,10 +114,11 @@ SECTIONS
     *(.edata)
   }
 
-  .lv.mgr.page BLOCK(__section_alignment__) :
+  .lv.mgr.page BLOCK(__section_alignment__): 
   {
+    . = ALIGN(4);
     __lv_mgr_page_cfg_start__ = .;
-    *(.lv.mgr.page)
+    KEEP (*(.lv.mgr.page))
     __lv_mgr_page_cfg_end__ = .;
   }
 

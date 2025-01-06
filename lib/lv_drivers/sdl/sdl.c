@@ -52,7 +52,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include SDL_INCLUDE_PATH
-#include "win_param.h"
+#include "gui/gui_param.h"
 /*********************
  *      DEFINES
  *********************/

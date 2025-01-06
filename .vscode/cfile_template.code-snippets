@@ -1,0 +1,52 @@
+{
+	// Place your lv_mgr 工作区 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"New .c file template": {
+		"prefix": "#cfile_template",
+		"body": [
+			"/* Includes --------------------------------------------------------------------------------------*/",
+			"/* Private define --------------------------------------------------------------------------------*/",
+			"/* Private macro ---------------------------------------------------------------------------------*/",
+			"/* Private typedef -------------------------------------------------------------------------------*/",
+			"/* Private function prototypes -------------------------------------------------------------------*/",
+			"/* Private variables -----------------------------------------------------------------------------*/",
+			"/* Private functions -----------------------------------------------------------------------------*/",
+		],
+		"description": "c source file template"
+	},
+	"New .h file template": {
+		"prefix": "#hfile_template",
+		"body": [
+			"#ifndef ${1}_H",
+			"#define ${1}_H",
+			"\n#ifdef __cplusplus",
+			"extern \"C\" {",
+			"#endif\n\n",
+			"/* Includes --------------------------------------------------------------------------------------*/",
+			"/* Define ----------------------------------------------------------------------------------------*/",
+			"/* Exported macro --------------------------------------------------------------------------------*/",
+			"/* Exported typedef ------------------------------------------------------------------------------*/",
+			"/* Exported constants ----------------------------------------------------------------------------*/",
+			"/* Exported functions ----------------------------------------------------------------------------*/",
+			"\n#ifdef __cplusplus",
+			"}",
+			"#endif",
+			"\n#endif /* ${1}_H */",
+		],
+		"description": "c source file template"
+	},
+}
