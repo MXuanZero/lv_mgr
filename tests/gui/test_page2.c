@@ -56,8 +56,10 @@ static void test_gui_page2_exit(void)
 {
 }
 
+volatile static int i = 0;
 static void test_gui_page2_destroy(void)
 {
+	i++;
 }
 
 static void test_gui_page2_anim(lv_obj_t *scr, uint32_t *time)

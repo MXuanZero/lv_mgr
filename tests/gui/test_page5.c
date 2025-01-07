@@ -22,7 +22,8 @@ static void btn_event_handler(lv_event_t *e)
 		} else if(target == test_gui_page5_btn_prev) {
 			lv_mgr_page_pop(true);
 		} else if(target == test_gui_page5_btn_home) {
-			lv_mgr_page_pop(true);
+			// lv_mgr_page_pop_n(3, true);
+			lv_mgr_page_pop_to_root(false);
 		}
 		break;
 	default:
@@ -34,6 +35,10 @@ static lv_obj_t *test_gui_page5_create(lv_obj_t *parent)
 {
 	test_gui_page5_obj = lv_obj_create(parent);
 	lv_obj_set_style_bg_color(test_gui_page5_obj, lv_color_hex(0x555555), 0);
+
+	test_gui_page5_btn_home = lv_btn_create(test_gui_page5_obj);
+	lv_obj_align_to(test_gui_page5_btn_home, test_gui_page5_obj, LV_ALIGN_CENTER, 0, 0xA0);
+	lv_obj_add_event_cb(test_gui_page5_btn_home, btn_event_handler, LV_EVENT_CLICKED, NULL);
 
 	test_gui_page5_btn_next = lv_btn_create(test_gui_page5_obj);
 	lv_obj_align_to(test_gui_page5_btn_next, test_gui_page5_obj, LV_ALIGN_CENTER, -0xA0, 0xA0);
@@ -59,13 +64,15 @@ static void test_gui_page5_exit(void)
 {
 }
 
+volatile static int i = 0;
 static void test_gui_page5_destroy(void)
 {
+	i++;
 }
 
 static void test_gui_page5_anim(lv_obj_t *scr, uint32_t *time)
 {
-	*time = 1000;
+	*time = 100;
 	lv_scr_load_anim(scr, LV_SCR_LOAD_ANIM_OVER_RIGHT, *time, 0, false);
 }
 
