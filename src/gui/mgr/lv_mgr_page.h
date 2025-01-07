@@ -48,9 +48,19 @@ lv_mgr_status lv_mgr_page_init(void);
 lv_mgr_status lv_mgr_page_push(int32_t page_id, bool anim);
 
 /**
- * @brief 推出页面
+ * @brief 退出页面
  */
 lv_mgr_status lv_mgr_page_pop(bool anim);
+
+/**
+ * @brief 退出多个页面
+ */
+lv_mgr_status lv_mgr_page_pop_n(uint32_t n, bool anim);
+
+/**
+ * @brief 返回主目录
+ */
+lv_mgr_status lv_mgr_page_pop_to_root(bool anim);
 
 /**
  * @brief 返回当前页面id

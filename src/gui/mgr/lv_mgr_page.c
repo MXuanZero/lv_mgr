@@ -1,5 +1,6 @@
 /* Includes --------------------------------------------------------------------------------------*/
 #include "lv_mgr_page.h"
+#include "lvgl/src/misc/lv_mem.h"
 #include <stdio.h>
 /* Private define --------------------------------------------------------------------------------*/
 /* Private macro ---------------------------------------------------------------------------------*/
@@ -91,7 +92,6 @@ static void lv_mgr_page_delay_destroy(lv_mgr_page_t *page)
 
 static void lv_mgr_page_remove(lv_mgr_page_t *page)
 {
-	/* TODO: exit destroy 需要分开处理 */
 	lv_mgr_page_interface_t *interface = page->interface;
 	if (page->state > LV_PAGE_STATE_INACTIVE) {
 		interface->exit();
@@ -243,6 +243,8 @@ lv_mgr_status lv_mgr_page_pop(bool anim)
 			lv_mgr_page_delay_destroy(top_page);
 		} else {
 			lv_mgr_page_remove(top_page); // 执行exit不执行destroy
+			lv_scr_load(STACK_SEC->page->obj);
+			lv_obj_del(top_page->obj);
 		}
 		lv_mem_free((void *)STACK_TOP);
 	} else {
@@ -263,12 +265,43 @@ lv_mgr_status lv_mgr_page_pop(bool anim)
 
 lv_mgr_status lv_mgr_page_pop_n(uint32_t n, bool anim)
 {
+	if (STACK_TOP == STACK_ROOT || STACK_TOP == NULL) {
+		return LV_MGR_OK;
+	}
+	if (n >= STACK_SIZE || n < 1) {
+		return LV_MGR_ERROR;
+	}
+
+	anim = false; // 多页面退出暂不支持动画
+
+	uint32_t pop_cnt = 0;
+	lv_obj_t *cur_scr_obj = STACK_TOP->page->obj;
+	lv_mgr_page_remove(STACK_TOP->page);
+	lv_mem_free(STACK_TOP);
+	STACK_TOP = STACK_SEC;
+
+	while ((++pop_cnt < n) && (STACK_TOP != NULL) && (STACK_TOP != STACK_ROOT)) {
+		STACK_SEC = STACK_TOP->prev;
+		lv_mgr_page_remove(STACK_TOP->page);
+		lv_obj_del(STACK_TOP->page->obj);
+		lv_mem_free(STACK_TOP);
+		STACK_TOP = STACK_SEC;
+		STACK_SIZE--;
+	}
+	STACK_SEC = STACK_TOP->prev;
+	lv_mgr_page_active(STACK_TOP->page);
+
+	lv_scr_load(STACK_TOP->page->obj);
+	if (cur_scr_obj) {
+		lv_obj_del(cur_scr_obj);
+	}
+
 	return LV_MGR_OK;
 }
 
 lv_mgr_status lv_mgr_page_pop_to_root(bool anim)
 {
-	return LV_MGR_OK;
+	return lv_mgr_page_pop_n(STACK_SIZE - 1, anim);
 }
 
 int32_t lv_mgr_page_get_id(void)
